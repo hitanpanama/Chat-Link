@@ -1,18 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-  <title>Hubungi Saya</title>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hubungi Saya</title>
   <style>
-    body { font-family: sans-serif; text-align: center; padding: 50px; }
-    .button { display: inline-block; padding: 15px 25px; font-size: 18px; margin: 10px; text-decoration: none; color: white; border-radius: 8px; }
-    .wa { background-color: #25D366; }
-    .tele { background-color: #0088cc; }
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background-color: #f2f2f2;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #333;
+    }
+
+    a.button {
+      display: block;
+      width: 90%;
+      max-width: 320px;
+      padding: 1rem;
+      margin: 0.75rem auto;
+      background-color: #25D366;
+      color: white;
+      text-align: center;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 1.2rem;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: background-color 0.2s;
+    }
+
+    a.button.telegram {
+      background-color: #0088cc;
+    }
+
+    a.button:hover {
+      opacity: 0.9;
+    }
   </style>
 </head>
 <body>
   <h1>Hubungi Saya</h1>
-  <a class="button wa" href="https://wa.me/60103836180" target="_blank">Chat via WhatsApp</a>
-  <a class="button tele" href="https://t.me/geridanabu" target="_blank">Chat via Telegram</a>
+
+  <a class="button" href="https://wa.me/60103836180" target="_blank">Chat via WhatsApp</a>
+  <a class="button telegram" href="https://t.me/geridanabu" target="_blank">Chat via Telegram</a>
 </body>
 </html>
